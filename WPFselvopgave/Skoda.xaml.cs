@@ -23,21 +23,22 @@ namespace WPFselvopgave
         {
             InitializeComponent();
         }
-
+        //Messagebox after buying a car
         private void S1_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Du har købt: Skoda Octavia");
         }
-
+        //Messagebox after buying a car
         private void S2_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Du har købt: Skoda Fabia");
         }
-
+        //Messagebox after buying a car
         private void S3_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Du har købt: Skoda Kodaq");
         }
+        //Go back button. Returns you to main menu
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             MainWindow win1 = new MainWindow();

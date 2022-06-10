@@ -24,7 +24,7 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
-
+        <!--Main text-->
         <TextBlock Grid.Column="1" 
                    Grid.Row="1" 
                    FontSize="20" 
@@ -37,14 +37,14 @@
                    Grid.Row="2" 
                    Text="Bil Mærke: Toyota, Audi, Skoda" 
                    Grid.ColumnSpan="3"/>
-
+        <!--Search box-->
         <TextBox x:Name="BilMærkeText" 
                  Grid.Column="1" 
                  Grid.Row="3"
                  Width="150"
                  Height="25"
                  CharacterCasing="Upper"/>
-
+          <!--Search button-->
         <Button x:Name="SubmitButton" 
                 Content="Søg" 
                 Grid.Column="2"
@@ -53,12 +53,12 @@
                 Width="50"
                 Click="SubmitButton_Click"
                 />
-
+         <!--Front page image style-->
         <Image Source="https://go-biler.dk/wp-content/uploads/2022/03/image0__1_-removebg-preview.png"
                Grid.Column="4"
                Grid.Row="5"
                Width="380"/>
-
+        <!--Contacts-->
         <TextBlock Grid.Column="1"
                    Grid.Row="5"
                    Width="150"
@@ -73,7 +73,7 @@
                    FontSize="20"
                    Text="- Email: FindBil@gmail.com"
                    Margin="21,58,50,169"/>
-
+        
         <TextBlock Grid.Column="1"
                    Grid.Row="5"
                    FontSize="20"

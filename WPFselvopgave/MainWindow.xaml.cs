@@ -24,7 +24,7 @@ namespace WPFselvopgave
         {
             InitializeComponent();
         }
-
+        //Submit button is the search button.
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
             string choice1 = "TOYOTA";
@@ -32,6 +32,7 @@ namespace WPFselvopgave
             string choice2 = "AUDI";
             string choice3 = "SKODA";
 
+            //Looks for specific input and switches to another xaml
             if (userInput == choice1)
             {
                 Toyota win2 = new Toyota();
@@ -51,6 +52,7 @@ namespace WPFselvopgave
                 this.Close();
 
             }
+            //if you type anything else than what is made.
             else
             {
                 MessageBox.Show("Den du ledder efter findes ikke");

@@ -30,7 +30,7 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
-
+        <!--Main text-->
         <TextBlock Grid.Column="1" 
                    Grid.Row="1" 
                    FontSize="40" 
@@ -44,7 +44,7 @@
                    Text="Velkommen til Audi" 
                    FontSize="20" 
                    Grid.ColumnSpan="3"/>
-
+        <!--Cars style-->
         <Button Name="A1" 
                 Grid.Column="1" 
                 Grid.Row="3" 
@@ -86,7 +86,7 @@
                    Grid.Row="4" 
                    Text="Audi A6: 595.000DKK" 
                    FontSize="16"/>
-
+        <!--Go back button style-->
         <Button x:Name="BackButton" 
                 Content="Tilbage" 
                 Grid.Column="4"
