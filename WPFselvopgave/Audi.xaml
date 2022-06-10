@@ -1,0 +1,99 @@
+﻿<Window x:Class="WPFselvopgave.Audi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFselvopgave"
+        mc:Ignorable="d"
+        Title="Audi" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" 
+                   Grid.Row="1" 
+                   FontSize="40" 
+                   FontWeight="bold" 
+                   Text="Audi" 
+                   Grid.ColumnSpan="3"
+                   Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Column="1" 
+                   Grid.Row="2" 
+                   Text="Velkommen til Audi" 
+                   FontSize="20" 
+                   Grid.ColumnSpan="3"/>
+
+        <Button Name="A1" 
+                Grid.Column="1" 
+                Grid.Row="3" 
+                Width="200" 
+                Margin="5,5,0,0" 
+                Click="A1_Click">
+            <Image Source="https://www.altomdata.dk/wp-content/uploads/2019/11/audi-e-tron-sportback.jpg"/>
+        </Button>
+        <TextBlock Margin="10,0,0,0" 
+                   Grid.Column="1" 
+                   Grid.Row="4" 
+                   Text="Audi Etron: 970.000DKK" 
+                   FontSize="16"/>
+
+        <Button Name="A2"
+                Grid.Column="2"
+                Grid.Row="3"
+                Width="200"
+                Margin="5,5,0,0"
+                Click="A2_Click">
+            <Image Source="https://mandesager.dk/wp-content/uploads/2019/03/Audi-R8-V10-Decennium_8.jpg"/>
+        </Button>
+        <TextBlock Margin="10,0,0,0" 
+                   Grid.Column="2" 
+                   Grid.Row="4" 
+                   Text="Audi R8: 3,4 mil DKK" 
+                   FontSize="16"/>
+
+        <Button Name="A3"
+                Grid.Column="3"
+                Grid.Row="3"
+                Width="200"
+                Margin="5,5,0,0"
+                Click="A3_Click">
+            <Image Source="https://images.interactives.dk/audi-a6-limousine-typhoon-gra-forfra-Ggk5h9XdVx_yH5BAgXnr0g.jpg"/>
+        </Button>
+        <TextBlock Margin="10,0,0,0" 
+                   Grid.Column="3" 
+                   Grid.Row="4" 
+                   Text="Audi A6: 595.000DKK" 
+                   FontSize="16"/>
+
+        <Button x:Name="BackButton" 
+                Content="Tilbage" 
+                Grid.Column="4"
+                Grid.Row="5" 
+                Margin=" 10" 
+                Click="BackButton_Click"
+                Width="100"/>
+
+    </Grid>
+</Window>

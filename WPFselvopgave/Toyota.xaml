@@ -1,0 +1,99 @@
+﻿<Window x:Class="WPFselvopgave.Toyota"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFselvopgave"
+        mc:Ignorable="d"
+        Title="Toyota" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" 
+                   Grid.Row="1" 
+                   FontSize="40" 
+                   FontWeight="bold" 
+                   Text="Toyota" 
+                   Grid.ColumnSpan="3"
+                   Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Column="1" 
+                   Grid.Row="2" 
+                   Text="Velkommen til Toyota" 
+                   FontSize="20" 
+                   Grid.ColumnSpan="3"/>
+
+        <Button Name="T1" 
+                Grid.Column="1" 
+                Grid.Row="3" 
+                Width="200" 
+                Margin="5,5,0,0" 
+                Click="T1_Click">
+            <Image Source="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2023-toyota-gr-corolla-111-1648581910.jpg"/>
+        </Button>
+        <TextBlock Margin="10,0,0,0" 
+                   Grid.Column="1" 
+                   Grid.Row="4" 
+                   Text="Toyota Corolla GR: 314.999DKK" 
+                   FontSize="16"/>
+
+        <Button Name="T2"
+                Grid.Column="2"
+                Grid.Row="3"
+                Width="200"
+                Margin="5,5,0,0"
+                Click="T2_Click">
+            <Image Source="https://www.toyota.com.sg/showroom/new-models/-/media/a8c83bb70b51433f8fe02003947b1afa.jpg"/>
+        </Button>
+        <TextBlock Margin="10,0,0,0" 
+                   Grid.Column="2" 
+                   Grid.Row="4" 
+                   Text="Toyota RAV4: 499.999DKK" 
+                   FontSize="16"/>
+
+        <Button Name="T3"
+                Grid.Column="3"
+                Grid.Row="3"
+                Width="200"
+                Margin="5,5,0,0"
+                Click="T3_Click">
+            <Image Source="https://www.astina.dk/images/supra_frontspoiler02_01.jpg"/>
+        </Button>
+        <TextBlock Margin="10,0,0,0" 
+                   Grid.Column="3" 
+                   Grid.Row="4" 
+                   Text="Toyota Supra MK5: 799.999DKK" 
+                   FontSize="16"/>
+
+        <Button x:Name="BackButton" 
+                Content="Tilbage" 
+                Grid.Column="4"
+                Grid.Row="5" 
+                Margin=" 10" 
+                Click="BackButton_Click"
+                Width="100"/>
+
+    </Grid>
+</Window>
